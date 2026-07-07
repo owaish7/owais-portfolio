@@ -1,7 +1,7 @@
 const SNAPSHOT: { k: string; v: React.ReactNode }[] = [
   { k: "location", v: "Jabalpur, IN ⇄ Tokyo" },
   { k: "education", v: "IIIT Jabalpur · CS" },
-  { k: "graduating", v: "May 2026" },
+  { k: "graduated", v: "May 2026" },
   { k: "focus", v: "Search · Backend · Cloud" },
   {
     k: "status",
@@ -35,7 +35,7 @@ export default function About() {
               color: "var(--fg)",
             }}
           >
-            I&apos;m a final-year B.Tech CS student at{" "}
+            I&apos;m a recent B.Tech CS graduate from{" "}
             <span style={{ color: "var(--acc)" }}>IIIT Jabalpur</span> (CPI 8.1)
             who lives at the intersection of large-scale backend systems and
             competitive algorithms.
