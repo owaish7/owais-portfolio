@@ -12,7 +12,7 @@ export const LINKS = {
   email: "mohdowais752003@gmail.com",
   phone: "+91 8287548058",
   resume:
-    "https://drive.google.com/file/d/10BTyLHpdTu3aml6UMPQjk9uUEuvmrlm7/view?usp=sharing",
+    "https://drive.google.com/file/d/1lBT38vLuzT7KD7o-pWsG3cZXgCG8Y2E-/view?usp=sharing",
   codeforces: "https://codeforces.com/profile/owais78",
   leetcode: "https://leetcode.com/owais75/",
   codechef: "https://www.codechef.com/users/jack08",
