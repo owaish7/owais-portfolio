@@ -8,7 +8,6 @@ const NAV = [
   "projects",
   "skills",
   "achievements",
-  "github",
   "contact",
 ];
 

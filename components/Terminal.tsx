@@ -173,10 +173,7 @@ export default function Terminal({
         ];
         break;
       case "github":
-        extra = [
-          out(["github.com/owaish7 — opening ↗"]),
-          out([{ a: "#github", t: "→ see repos below" }]),
-        ];
+        extra = [out(["github.com/owaish7 — opening ↗"])];
         setTimeout(() => window.open(LINKS.github, "_blank"), 200);
         break;
       case "theme":

@@ -2,7 +2,6 @@ import type {
   Achievement,
   PaletteItem,
   Project,
-  Repo,
   SkillGroup,
 } from "./types";
 
@@ -16,7 +15,6 @@ export const LINKS = {
   codeforces: "https://codeforces.com/profile/owais78",
   leetcode: "https://leetcode.com/owais75/",
   codechef: "https://www.codechef.com/users/jack08",
-  githubUser: "owaish7",
 } as const;
 
 export const STATS = [
@@ -110,7 +108,6 @@ export const paletteItems: PaletteItem[] = [
   { icon: "/", label: "Projects", href: "#projects", hint: "devrag · joblens" },
   { icon: "≡", label: "Skills", href: "#skills", hint: "stack" },
   { icon: "★", label: "Achievements", href: "#achievements", hint: "icpc · codeforces" },
-  { icon: "⌥", label: "GitHub", href: "#github", hint: "@owaish7" },
   { icon: "✉", label: "Contact", href: "#contact", hint: "email · linkedin" },
   { icon: "↑", label: "Back to top", href: "#home", hint: "" },
   { icon: "↗", label: "Open GitHub ↗", href: LINKS.github, hint: "external" },
@@ -119,10 +116,3 @@ export const paletteItems: PaletteItem[] = [
   { icon: "★", label: "LeetCode → owais75 ↗", href: LINKS.leetcode, hint: "external" },
 ];
 
-export const fallbackRepos: Repo[] = [
-  { name: "devrag", desc: "RAG over PDFs from scratch — no LangChain, no vector DB. Citations, abstention & an eval harness.", lang: "Python", stars: 0, url: "https://github.com/owaish7/devrag" },
-  { name: "joblens", desc: "Semantic job search + RAG assistant. Gemini embeddings, FAISS, LangGraph, FastAPI.", lang: "Python", stars: 0, url: "https://github.com/owaish7/joblens" },
-  { name: "Food-Link", desc: "Surplus-food → NGO platform. Socket.IO realtime + SVD recommender from scratch.", lang: "JavaScript", stars: 0, url: LINKS.github },
-  { name: "competitive-programming", desc: "1000+ solved problems across Codeforces, CodeChef & LeetCode.", lang: "C++", stars: 0, url: LINKS.github },
-  { name: "owais-portfolio", desc: "This site — a hand-built terminal-themed portfolio.", lang: "HTML", stars: 0, url: LINKS.github },
-];

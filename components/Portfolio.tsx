@@ -10,7 +10,6 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Achievements from "./Achievements";
-import GitHubSection from "./GitHubSection";
 import Contact from "./Contact";
 import CommandPalette from "./CommandPalette";
 
@@ -72,7 +71,6 @@ export default function Portfolio() {
       <Projects />
       <Skills />
       <Achievements />
-      <GitHubSection />
       <Contact themeLabel={themeLabel} />
       <CommandPalette open={paletteOpen} onClose={closePalette} />
     </div>

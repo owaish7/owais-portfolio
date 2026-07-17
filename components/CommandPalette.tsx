@@ -76,7 +76,7 @@ export default function CommandPalette({
             onKeyDown={(e) => {
               if (e.key === "Enter" && results[0]) activate(results[0].href);
             }}
-            placeholder="jump to… (about, projects, github…)"
+            placeholder="jump to… (about, projects, contact…)"
             autoComplete="off"
             spellCheck={false}
             style={{
