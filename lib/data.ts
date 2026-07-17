@@ -19,9 +19,9 @@ export const LINKS = {
 
 export const STATS = [
   { big: "256K", label: "JOBS INDEXED" },
-  { big: "1503", label: "CF SPECIALIST" },
-  { big: "#102", label: "ICPC ASIA WEST AIR" },
-  { big: "1000+", label: "PROBLEMS SOLVED" },
+  { big: "47", label: "JP PREFECTURES" },
+  { big: "#102", label: "ICPC ASIA WEST" },
+  { big: "1000+", label: "DSA SOLVED" },
 ] as const;
 
 export const projects: Project[] = [
@@ -95,11 +95,8 @@ export const skillGroups: SkillGroup[] = [
 
 export const achievements: Achievement[] = [
   { tag: "ICPC 2025", big: "#102", title: "Asia West Amritapuri", sub: "AIR 102 & Institute Topper — Team Greedy, India Online Prelims", url: LINKS.codeforces },
-  { tag: "META", big: "R2", title: "Meta Hacker Cup 2025", sub: "Advanced to Round 2 · All-India Rank 3137", url: LINKS.codeforces },
-  { tag: "CODEFORCES", big: "1503", title: "Specialist → owais78", sub: "Max rank 1665 / 46000 — Round 937 (Div. 4)", url: LINKS.codeforces },
-  { tag: "LEETCODE", big: "Top 6%", title: "700+ solved → owais75", sub: "DSA problems across contests & practice", url: LINKS.leetcode },
-  { tag: "CODECHEF", big: "3★", title: "Rating 1656 → jack08", sub: "Consistent contest participation", url: LINKS.codechef },
-  { tag: "OVERALL", big: "1000+", title: "Problems solved", sub: "Codeforces + CodeChef + LeetCode combined", url: LINKS.codeforces },
+  { tag: "META", big: "R2", title: "Meta Hacker Cup 2025", sub: "Advanced to Round 2", url: LINKS.codeforces },
+  { tag: "CP", big: "1000+", title: "Competitive Programming", sub: "Codeforces Specialist (1503) · LeetCode 700+ (Top 6%) · CodeChef 3★", url: LINKS.codeforces },
 ];
 
 export const paletteItems: PaletteItem[] = [
@@ -112,7 +109,5 @@ export const paletteItems: PaletteItem[] = [
   { icon: "↑", label: "Back to top", href: "#home", hint: "" },
   { icon: "↗", label: "Open GitHub ↗", href: LINKS.github, hint: "external" },
   { icon: "↗", label: "Open LinkedIn ↗", href: LINKS.linkedin, hint: "external" },
-  { icon: "★", label: "Codeforces → owais78 ↗", href: LINKS.codeforces, hint: "external" },
-  { icon: "★", label: "LeetCode → owais75 ↗", href: LINKS.leetcode, hint: "external" },
 ];
 

@@ -104,14 +104,14 @@ export default function Terminal({
       case "whoami":
         extra = [
           out([
-            "Mohammad Owais — Software Engineer @ Talendy (Tech Japan). B.Tech CS, IIIT Jabalpur (CPI 8.1). Search infra by day, competitive programming by night.",
+            "Mohammad Owais — Software Engineer @ Talendy (Tech Japan). B.Tech CS, IIIT Jabalpur (CPI 8.1). Backend & search systems, lately building with LLMs.",
           ]),
         ];
         break;
       case "about":
         extra = [
           out([
-            "I build large-scale search systems and solve 1000+ CP problems. ",
+            "I build large-scale search systems, and lately RAG and LLM features. ",
             { a: "#about", t: "→ read more" },
           ]),
         ];

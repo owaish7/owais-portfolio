@@ -41,8 +41,7 @@ export default function Hero() {
         Software Engineer{" "}
         <span style={{ color: "var(--acc)" }}>@ Talendy (Tech Japan)</span>. I
         build search platforms that index a quarter-million jobs across
-        countries — and grind <span style={{ color: "var(--fg)" }}>1000+</span>{" "}
-        competitive-programming problems for the fun of it.
+        countries, and enjoy competitive programming on the side.
       </p>
       <div
         className="rev"

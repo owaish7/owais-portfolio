@@ -37,8 +37,8 @@ export default function About() {
           >
             I&apos;m a recent B.Tech CS graduate from{" "}
             <span style={{ color: "var(--acc)" }}>IIIT Jabalpur</span> (CPI 8.1)
-            who lives at the intersection of large-scale backend systems and
-            competitive algorithms.
+            who works mostly on backend and search systems, and lately builds
+            with LLMs.
           </p>
           <p
             style={{
@@ -49,10 +49,9 @@ export default function About() {
             }}
           >
             At work I design search infrastructure — dedup pipelines,
-            cross-source indexing, cloud migrations. After hours I&apos;m on
-            Codeforces, CodeChef and LeetCode, where the same instinct for edge
-            cases and complexity pays off. I care about systems that are
-            correct, fast, and honest about their trade-offs.
+            cross-source indexing, cloud migrations. I care about systems that
+            are correct, fast, and honest about their trade-offs. Competitive
+            programming on the side keeps my problem-solving sharp.
           </p>
         </div>
         <div
