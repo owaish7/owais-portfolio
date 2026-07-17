@@ -18,43 +18,43 @@ const ENTRIES: Entry[] = [
     current: true,
     bullets: [
       <>
-        Expanded the {hi("Carreros AI")} job-search platform to 7 data sources
-        (256,000 listings) and built a cross-source dedup system (NFKC facility +
-        role + employment composite key) that removed {hi("12,600 duplicate")}{" "}
-        postings while keeping every job findable per source.
+        Built {hi("AI job summaries")} with Amazon Bedrock (Claude Haiku 4.5) so
+        advisors can scan roles without opening each listing.
       </>,
       <>
-        Leading the {hi("Azure→AWS migration")} — re-architecting onto
-        OpenSearch, ECS Fargate, S3 and Bedrock, and rewriting the query builder
-        from Azure OData to OpenSearch DSL.
+        Architected a cross-source dedup system (facility + role + employment
+        composite key) over {hi("256,000+ records")} from 7 sources, removing{" "}
+        {hi("12,600 duplicates")} while keeping every job findable per source.
+      </>,
+      <>
+        Leading the {hi("Azure→AWS migration")} — onto OpenSearch, ECS Fargate
+        and S3, including a full rewrite of the query builder from Azure OData to
+        OpenSearch DSL.
       </>,
     ],
   },
   {
-    role: "SDE Intern",
-    company: "Akatsuki Technologies, Japan",
-    date: "Oct 2025 — May 2026",
+    role: "Software Engineer Intern",
+    company: "Akatsuki AI Technologies, Japan",
+    date: "Nov 2025 — Jun 2026",
     current: false,
     bullets: [
       <>
-        Built web scrapers for 3 Japanese healthcare job portals (Playwright,
-        BeautifulSoup, JSON-LD), collecting {hi("66,000+ listings")} across 4
-        prefectures.
+        Built the full automated pipeline on Azure for a healthcare job-search
+        platform — scrapers for 4 Japanese portals, preprocessing and indexing
+        into Azure AI Search — scaling it to {hi("145,000+ listings")} across all
+        47 prefectures with 6-worker concurrency and a resume layer for network
+        failures.
       </>,
       <>
-        Developed a {hi("440+ line")} Japanese-to-English mapping &amp;
-        preprocessing pipeline — field extraction, normalization and indexing
-        for Azure AI Search across 48 searchable fields.
+        Generated {hi("AI summaries")} for the full catalog with Azure OpenAI,
+        running 20 parallel calls and handling content-filter edge cases to reach
+        near 100% coverage.
       </>,
       <>
-        Implemented Google Maps location search — full-screen map modal,
-        Geocoding-API address search, and distance filtering via bounding-box
-        calculations.
-      </>,
-      <>
-        Resolved 10+ search-filter issues iteratively with client feedback
-        (railway line/station separation, driver&apos;s-license tri-state logic,
-        city partial match).
+        Fixed distance search returning no nursing jobs — lifting coordinate
+        coverage from {hi("51% to 100%")} and results within 10 km of Tokyo from
+        0 to over 5,400.
       </>,
     ],
   },

@@ -28,6 +28,21 @@ export const STATS = [
 
 export const projects: Project[] = [
   {
+    name: "devrag",
+    cat: "gen-ai / RAG",
+    url: "https://github.com/owaish7/devrag",
+    desc: "A RAG pipeline over PDFs built from scratch — no LangChain, no vector database. Token-aware chunking, sentence-transformer embeddings and cosine search, with page-level citations and a relevance gate that refuses off-topic questions before spending an API call. Includes an eval harness (hit@k, MRR) that runs without an API key.",
+    tags: ["Python", "PyTorch", "sentence-transformers", "FastAPI", "Docker", "Gemini"],
+  },
+  {
+    name: "JobLens",
+    cat: "gen-ai / RAG",
+    url: "https://github.com/owaish7/joblens",
+    demo: "https://joblens-a6sg.onrender.com",
+    desc: "Semantic job search + RAG assistant over live listings. Gemini embeddings and a FAISS vector store for retrieval, a LangGraph workflow orchestrating retrieval → prompt → generation, and cited answers served over a FastAPI API. Deployed with Docker.",
+    tags: ["Python", "FastAPI", "LangChain", "LangGraph", "FAISS", "Gemini"],
+  },
+  {
     name: "Food-Link",
     cat: "full-stack",
     url: "https://github.com/owaish7/food-link-app",
@@ -57,11 +72,11 @@ export const projects: Project[] = [
     tags: ["TypeScript", "LLM", "Weather API"],
   },
   {
-    name: "Phishing Scanner",
-    cat: "browser extension",
+    name: "AI Phishing Detection",
+    cat: "ml / nlp",
     url: "https://github.com/owaish7/Phishing-scanner-extension",
-    desc: "Browser extension that inspects links and page signals to flag likely phishing sites in real time as you browse.",
-    tags: ["JavaScript", "Chrome Ext", "Security"],
+    desc: "Fine-tuned DistilBERT to detect SMS smishing at 99.4% accuracy, fixing a 6:1 class imbalance with back-translation. For URLs, benchmarked Logistic Regression vs Random Forest (82.5%) on 549K samples — choosing the Random Forest over a 99% DistilBERT that failed to generalise. Ships with a Chrome MV3 extension that scans page links against the deployed model.",
+    tags: ["DistilBERT", "PyTorch", "scikit-learn", "Chrome MV3", "Flask"],
   },
   {
     name: "Drowning Detection",
@@ -74,9 +89,10 @@ export const projects: Project[] = [
 
 export const skillGroups: SkillGroup[] = [
   { name: "languages", items: ["Python", "C++", "C", "Java", "JavaScript", "TypeScript", "SQL"] },
+  { name: "ai / llm", items: ["RAG", "LangChain", "LangGraph", "FAISS", "sentence-transformers", "PyTorch", "DistilBERT", "Gemini", "Bedrock", "Azure OpenAI"] },
   { name: "frameworks", items: ["ReactJS", "NextJS", "NodeJS", "Express", "Flask", "FastAPI", "Tailwind"] },
   { name: "databases", items: ["MongoDB", "MySQL", "PostgreSQL"] },
-  { name: "tools", items: ["AWS", "Azure", "GCP", "Docker", "Git", "Prisma", "GitHub Actions"] },
+  { name: "tools", items: ["AWS", "Azure", "GCP", "Docker", "Terraform", "Git", "GitHub Actions"] },
 ];
 
 export const achievements: Achievement[] = [
@@ -91,7 +107,7 @@ export const achievements: Achievement[] = [
 export const paletteItems: PaletteItem[] = [
   { icon: "#", label: "About", href: "#about", hint: "bio" },
   { icon: ">", label: "Experience", href: "#experience", hint: "talendy · akatsuki" },
-  { icon: "/", label: "Projects", href: "#projects", hint: "food-link · fast-er" },
+  { icon: "/", label: "Projects", href: "#projects", hint: "devrag · joblens" },
   { icon: "≡", label: "Skills", href: "#skills", hint: "stack" },
   { icon: "★", label: "Achievements", href: "#achievements", hint: "icpc · codeforces" },
   { icon: "⌥", label: "GitHub", href: "#github", hint: "@owaish7" },
@@ -104,8 +120,9 @@ export const paletteItems: PaletteItem[] = [
 ];
 
 export const fallbackRepos: Repo[] = [
+  { name: "devrag", desc: "RAG over PDFs from scratch — no LangChain, no vector DB. Citations, abstention & an eval harness.", lang: "Python", stars: 0, url: "https://github.com/owaish7/devrag" },
+  { name: "joblens", desc: "Semantic job search + RAG assistant. Gemini embeddings, FAISS, LangGraph, FastAPI.", lang: "Python", stars: 0, url: "https://github.com/owaish7/joblens" },
   { name: "Food-Link", desc: "Surplus-food → NGO platform. Socket.IO realtime + SVD recommender from scratch.", lang: "JavaScript", stars: 0, url: LINKS.github },
-  { name: "FAST-ER-Ambulance", desc: "Realtime ambulance dispatch with GenAI triage & sentiment classification.", lang: "Python", stars: 0, url: "https://github.com/owaish7/Faster-ambulance/tree/main" },
   { name: "competitive-programming", desc: "1000+ solved problems across Codeforces, CodeChef & LeetCode.", lang: "C++", stars: 0, url: LINKS.github },
   { name: "owais-portfolio", desc: "This site — a hand-built terminal-themed portfolio.", lang: "HTML", stars: 0, url: LINKS.github },
 ];
