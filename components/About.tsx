@@ -2,7 +2,7 @@ const SNAPSHOT: { k: string; v: React.ReactNode }[] = [
   { k: "location", v: "Noida, India" },
   { k: "education", v: "IIIT Jabalpur · CS" },
   { k: "graduated", v: "June 2026" },
-  { k: "focus", v: "Search · Backend · Cloud" },
+  { k: "focus", v: "AI · Backend · Cloud" },
   {
     k: "status",
     v: <span style={{ color: "var(--acc)" }}>● open to opportunities</span>,
