@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+// TypeScript may not have a declaration for CSS side-effect imports in some
+// editor configurations, while Next.js handles this import at build time.
+// @ts-ignore -- CSS is processed by Next.js and has no runtime exports.
 import "./globals.css";
 
 const SITE_URL = "https://owais-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Mohammad Owais — Software Engineer",
+  title: "Mohammad Owais — AI & Software Engineer",
   description:
-    "Software Engineer @ Talendy (Tech Japan). I build search platforms that index a quarter-million jobs — and grind 1000+ competitive-programming problems for fun.",
+    "AI tools, workflow automation, retrieval systems and applied security. Explore Mohammad Owais’s projects, source code and engineering decisions.",
   keywords: [
     "Mohammad Owais",
     "Software Engineer",
@@ -19,18 +23,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mohammad Owais" }],
   openGraph: {
-    title: "Mohammad Owais — Software Engineer",
+    title: "Mohammad Owais — AI & Software Engineer",
     description:
-      "Search infra by day, competitive programming by night. Talendy (Tech Japan) · IIIT Jabalpur.",
+      "Practical AI tools, grounded answers and automated workflows. Projects with source code and documented trade-offs.",
     url: SITE_URL,
     siteName: "Mohammad Owais",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Mohammad Owais — Software Engineer",
+    title: "Mohammad Owais — AI & Software Engineer",
     description:
-      "Search infra by day, competitive programming by night. Talendy (Tech Japan) · IIIT Jabalpur.",
+      "Practical AI tools, grounded answers and automated workflows. Projects with source code and documented trade-offs.",
   },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
@@ -58,8 +62,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+
+        <Script
+          src="https://cdn.luciaprotocol.com/lucia-sdk-latest.min.js"
+          data-api-key={process.env.NEXT_PUBLIC_LUCIA_API_KEY}
+          data-auto-track-clicks="true"
+          strategy="beforeInteractive"
+        />
       </head>
+
       <body>{children}</body>
     </html>
   );
