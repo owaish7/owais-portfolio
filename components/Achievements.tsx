@@ -4,7 +4,7 @@ export default function Achievements() {
   return (
     <section
       id="achievements"
-      style={{ maxWidth: 1080, margin: "0 auto", padding: "8px 24px 78px" }}
+      style={{ maxWidth: 1180, margin: "0 auto", padding: "32px 24px 90px" }}
     >
       <div style={{ color: "var(--acc)", fontSize: 13, marginBottom: 26 }}>
         $ ./achievements --competitive-programming
@@ -14,7 +14,7 @@ export default function Achievements() {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(3,1fr)",
-          gap: 16,
+          gap: 20,
         }}
       >
         {achievements.map((a) => (
@@ -26,7 +26,7 @@ export default function Achievements() {
             style={{
               border: "1px solid var(--line)",
               background: "var(--panel)",
-              padding: "22px 22px 20px",
+              padding: "30px 28px 28px",
               display: "flex",
               flexDirection: "column",
               gap: 8,
@@ -54,7 +54,7 @@ export default function Achievements() {
             </div>
             <div
               style={{
-                fontSize: 28,
+                fontSize: 40,
                 fontWeight: 800,
                 color: "var(--acc)",
                 textShadow: "var(--glow)",
@@ -62,15 +62,21 @@ export default function Achievements() {
             >
               {a.big}
             </div>
-            <div style={{ fontSize: 13, color: "var(--fg)" }}>{a.title}</div>
+            <div style={{ fontSize: 16, color: "var(--fg)", fontWeight: 600 }}>{a.title}</div>
             <div
-              style={{ fontSize: 12, color: "var(--dim)", lineHeight: 1.5 }}
+              style={{ fontSize: 13, color: "var(--dim)", lineHeight: 1.6 }}
             >
               {a.sub}
             </div>
+            {a.writeup && (
+              <div style={{ fontSize: 12, color: "var(--faint)", lineHeight: 1.6, marginTop: 5 }}>
+                {a.writeup}
+              </div>
+            )}
           </a>
         ))}
       </div>
     </section>
   );
 }
+
