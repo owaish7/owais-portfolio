@@ -1,27 +1,33 @@
 import { LINKS } from "@/lib/data";
 
+const SNAPSHOT = [
+  ["location", "Noida, India"],
+  ["education", "IIIT Jabalpur · CS"],
+  ["graduated", "June 2026"],
+  ["relocation", "Open to Europe / UK"],
+  ["focus", "AI · Automation · Backend"],
+] as const;
+
 export default function Hero() {
   return (
-    <section id="home" className="hero-shell">
-      <div className="hero-copy">
-        <p className="eyebrow rev"><span className="status-dot" /> OPEN TO AI & TECH INTERNSHIPS</p>
-        <p className="hero-name rev">MOHAMMAD OWAIS <span>/ SOFTWARE ENGINEER</span></p>
-        <p className="hero-intro rev">Hi, I&apos;m Mohammad Owais — a B.Tech CS graduate from <span>IIIT Jabalpur</span>. I build practical AI systems, automation workflows, and full-stack products.</p>
-        <h1 className="rev">I build AI that<br /><span>does the work.</span><span className="cur" /></h1>
-        <div className="hero-actions rev">
-          <a className="lk lkacc" href="#projects">Explore selected work ↓</a>
-          <a className="lk" href={LINKS.resume} target="_blank" rel="noreferrer">View résumé ↗</a>
-          <a className="lk" href={LINKS.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+    <section id="home" className="hero-shell about-hero">
+      <div className="about-hero-heading"><p className="eyebrow rev">$ cat about.md</p></div>
+      <div className="about-hero-grid">
+        <div className="about-hero-copy">
+          <p className="about-lead rev">I&apos;m a recent B.Tech CS graduate from <span>IIIT Jabalpur</span> (CPI 8.1) building practical AI tools on a foundation of backend engineering and competitive programming.</p>
+          <p className="about-body rev">My work spans search infrastructure, retrieval-augmented generation, workflow automation and model fine-tuning. I like understanding the pieces underneath a tool: how it retrieves evidence, handles a failed API call, or decides when a human should take over. I document those decisions and their limitations alongside the code.</p>
+          <div className="hero-actions rev">
+            <a className="lk lkacc" href="#projects">Explore selected work ↓</a>
+            <a className="lk" href={LINKS.resume} target="_blank" rel="noreferrer">View résumé ↗</a>
+            <a className="lk" href={LINKS.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
         </div>
-        <p className="hero-footnote">Python / TypeScript / AI systems / full-stack development</p>
+        <div className="snapshot-card rev">
+          <p className="snapshot-title">// SNAPSHOT</p>
+          {SNAPSHOT.map(([key, value]) => <div className="snapshot-row" key={key}><span>{key}</span><strong>{value}</strong></div>)}
+          <div className="snapshot-row snapshot-status"><span>status</span><strong><i /> open to opportunities</strong></div>
+        </div>
       </div>
-      <aside className="build-panel rev" aria-label="Areas of hands-on project work">
-        <div className="panel-top"><span>~/owais/build-log</span><span className="status-dot" /></div>
-        <div className="build-row"><span className="build-index">01</span><div><h2>Automate the workflow</h2><p>Triggers → AI steps → human approval</p><a href="https://github.com/owaish7/ai-workflow-builder" target="_blank" rel="noreferrer">Explore the executor ↗</a></div></div>
-        <div className="build-row"><span className="build-index">02</span><div><h2>Ground the answer</h2><p>Local embeddings → retrieval → citations</p><a href="https://github.com/owaish7/devrag" target="_blank" rel="noreferrer">Read the RAG implementation ↗</a></div></div>
-        <div className="build-row"><span className="build-index">03</span><div><h2>Test the model</h2><p>Fine-tuning → benchmarks → browser tool</p><a href="https://github.com/owaish7/Phishing-scanner-extension" target="_blank" rel="noreferrer">Inspect the security project ↗</a></div></div>
-        <div className="panel-bottom">$ build · inspect · improve<span className="small-cursor">_</span></div>
-      </aside>
     </section>
   );
 }
