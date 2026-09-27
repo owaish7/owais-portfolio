@@ -4,7 +4,7 @@ const SNAPSHOT = [
   ["location", "Noida, India"],
   ["education", "IIIT Jabalpur · CS"],
   ["graduated", "June 2026"],
-  ["relocation", "Open to Europe / UK"],
+  ["relocation", "Open"],
   ["focus", "AI · Automation · Backend"],
 ] as const;
 
@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="about-hero-heading"><p className="eyebrow rev">$ cat about.md</p></div>
       <div className="about-hero-grid">
         <div className="about-hero-copy">
-          <p className="about-lead rev">I&apos;m a recent B.Tech CS graduate from <span>IIIT Jabalpur</span> (CPI 8.1) building practical AI tools on a foundation of backend engineering and competitive programming.</p>
+          <p className="about-lead rev">I&apos;m <span>Mohammad Owais</span>, a recent B.Tech CS graduate from IIIT Jabalpur, building practical AI tools on a foundation of backend engineering and competitive programming.</p>
           <p className="about-body rev">My work spans search infrastructure, retrieval-augmented generation, workflow automation and model fine-tuning. I like understanding the pieces underneath a tool: how it retrieves evidence, handles a failed API call, or decides when a human should take over. I document those decisions and their limitations alongside the code.</p>
           <div className="hero-actions rev">
             <a className="lk lkacc" href="#projects">Explore selected work ↓</a>
