@@ -2,7 +2,8 @@ const SNAPSHOT: { k: string; v: React.ReactNode }[] = [
   { k: "location", v: "Noida, India" },
   { k: "education", v: "IIIT Jabalpur · CS" },
   { k: "graduated", v: "June 2026" },
-  { k: "focus", v: "AI · Backend · Cloud" },
+  { k: "relocation", v: "Open to Europe / UK" },
+  { k: "focus", v: "AI · Automation · Backend" },
   {
     k: "status",
     v: <span style={{ color: "var(--acc)" }}>● open to opportunities</span>,
@@ -37,8 +38,8 @@ export default function About() {
           >
             I&apos;m a recent B.Tech CS graduate from{" "}
             <span style={{ color: "var(--acc)" }}>IIIT Jabalpur</span> (CPI 8.1)
-            who works mostly on backend and search systems, and lately builds
-            with LLMs.
+            building practical AI tools on a foundation of backend engineering
+            and competitive programming.
           </p>
           <p
             style={{
@@ -48,10 +49,11 @@ export default function About() {
               color: "var(--dim)",
             }}
           >
-            At work I design search infrastructure — dedup pipelines,
-            cross-source indexing, cloud migrations. I care about systems that
-            are correct, fast, and honest about their trade-offs. Competitive
-            programming on the side keeps my problem-solving sharp.
+            My work spans search infrastructure, retrieval-augmented generation,
+            workflow automation and model fine-tuning. I like understanding the
+            pieces underneath a tool: how it retrieves evidence, handles a
+            failed API call, or decides when a human should take over. I document
+            those decisions and their limitations alongside the code.
           </p>
         </div>
         <div
@@ -102,3 +104,5 @@ export default function About() {
     </section>
   );
 }
+
+
