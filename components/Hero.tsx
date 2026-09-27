@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="hero-copy">
         <p className="eyebrow rev"><span className="status-dot" /> OPEN TO AI & TECH INTERNSHIPS</p>
         <p className="hero-name rev">MOHAMMAD OWAIS <span>/ SOFTWARE ENGINEER</span></p>
+        <p className="hero-intro rev">Hi, I&apos;m Mohammad Owais — a B.Tech CS graduate from <span>IIIT Jabalpur</span>. I build practical AI systems, automation workflows, and full-stack products.</p>
         <h1 className="rev">I build AI that<br /><span>does the work.</span><span className="cur" /></h1>
-        <p className="hero-description rev">From a question to a cited answer. From a webhook to an automated workflow. I build AI tools with useful interfaces, inspectable behavior, and code you can explore.</p>
         <div className="hero-actions rev">
           <a className="lk lkacc" href="#projects">Explore selected work ↓</a>
           <a className="lk" href={LINKS.resume} target="_blank" rel="noreferrer">View résumé ↗</a>
