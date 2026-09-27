@@ -2,70 +2,27 @@ import { LINKS } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      style={{ maxWidth: 1080, margin: "0 auto", padding: "88px 24px 60px" }}
-    >
-      <div
-        className="rev"
-        style={{ color: "var(--faint)", fontSize: 13, marginBottom: 18 }}
-      >
-        $ whoami --verbose
+    <section id="home" className="hero-shell">
+      <div className="hero-copy">
+        <p className="eyebrow rev"><span className="status-dot" /> OPEN TO AI & TECH INTERNSHIPS</p>
+        <p className="hero-name rev">MOHAMMAD OWAIS <span>/ SOFTWARE ENGINEER</span></p>
+        <h1 className="rev">I build AI that<br /><span>does the work.</span><span className="cur" /></h1>
+        <p className="hero-description rev">From a question to a cited answer. From a webhook to an automated workflow. I build AI tools with useful interfaces, inspectable behavior, and code you can explore.</p>
+        <div className="hero-actions rev">
+          <a className="lk lkacc" href="#projects">Explore selected work ↓</a>
+          <a className="lk" href={LINKS.resume} target="_blank" rel="noreferrer">View résumé ↗</a>
+          <a className="lk" href={LINKS.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <p className="hero-footnote">Python / TypeScript / AI systems / full-stack development</p>
       </div>
-      <h1
-        className="rev"
-        style={{
-          fontSize: "clamp(44px,9vw,104px)",
-          lineHeight: 0.94,
-          fontWeight: 800,
-          letterSpacing: "-.03em",
-          margin: 0,
-          color: "var(--fg)",
-        }}
-      >
-        MOHAMMAD
-        <br />
-        OWAIS
-        <span className="cur" />
-      </h1>
-      <p
-        className="rev"
-        style={{
-          margin: "26px 0 0",
-          fontSize: "clamp(15px,2.4vw,19px)",
-          color: "var(--dim)",
-          maxWidth: 680,
-          lineHeight: 1.65,
-        }}
-      >
-        Software Engineer{" "}
-        <span style={{ color: "var(--acc)" }}>@ Talendy (Tech Japan)</span>. I
-        build search platforms that index a quarter-million jobs across
-        countries, and enjoy competitive programming on the side.
-      </p>
-      <div
-        className="rev"
-        style={{
-          marginTop: 30,
-          display: "flex",
-          gap: 12,
-          flexWrap: "wrap",
-          fontSize: 13,
-        }}
-      >
-        <a className="lk lkacc" href="#projects">
-          → view work
-        </a>
-        <a className="lk" href={LINKS.github} target="_blank" rel="noreferrer">
-          ↗ github.com/owaish7
-        </a>
-        <a className="lk" href={LINKS.linkedin} target="_blank" rel="noreferrer">
-          ↗ linkedin
-        </a>
-        <a className="lk" href={`mailto:${LINKS.email}`}>
-          ✉ email
-        </a>
-      </div>
+      <aside className="build-panel rev" aria-label="Areas of hands-on project work">
+        <div className="panel-top"><span>~/owais/build-log</span><span className="status-dot" /></div>
+        <div className="build-row"><span className="build-index">01</span><div><h2>Automate the workflow</h2><p>Triggers → AI steps → human approval</p><a href="https://github.com/owaish7/ai-workflow-builder" target="_blank" rel="noreferrer">Explore the executor ↗</a></div></div>
+        <div className="build-row"><span className="build-index">02</span><div><h2>Ground the answer</h2><p>Local embeddings → retrieval → citations</p><a href="https://github.com/owaish7/devrag" target="_blank" rel="noreferrer">Read the RAG implementation ↗</a></div></div>
+        <div className="build-row"><span className="build-index">03</span><div><h2>Test the model</h2><p>Fine-tuning → benchmarks → browser tool</p><a href="https://github.com/owaish7/Phishing-scanner-extension" target="_blank" rel="noreferrer">Inspect the security project ↗</a></div></div>
+        <div className="panel-bottom">$ build · inspect · improve<span className="small-cursor">_</span></div>
+      </aside>
     </section>
   );
 }
+
