@@ -32,8 +32,9 @@ export default function Contact({ themeLabel }: { themeLabel: string }) {
             maxWidth: 560,
           }}
         >
-          Open to software-engineering roles and interesting problems. Fastest
-          reply by email — or find me grinding rating on Codeforces.
+          Interested in remote AI and tech internships where I can build,
+          experiment and ship useful tools. Explore my code, view my résumé,
+          or reach out on LinkedIn to talk about your team.
         </p>
         <div
           style={{
@@ -88,3 +89,4 @@ export default function Contact({ themeLabel }: { themeLabel: string }) {
     </section>
   );
 }
+
