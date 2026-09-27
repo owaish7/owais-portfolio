@@ -195,6 +195,8 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 .hero-copy h1 > span:first-child { color: var(--acc); }
 .hero-copy .cur { width: .17em; height: .85em; margin-left: 6px; }
 .hero-description { max-width: 560px; font-size: 15px; line-height: 1.85; color: var(--dim); margin: 26px 0; }
+.hero-intro { max-width: 650px; font-size: 15px; line-height: 1.8; color: var(--dim); margin: 0 0 24px; }
+.hero-intro span { color: var(--acc); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
 .hero-footnote { font-size: 10px; color: var(--faint); margin-top: 22px; }
 .build-panel { border: 1px solid var(--line2); background: var(--panel); box-shadow: 10px 10px 0 var(--panel2); }
