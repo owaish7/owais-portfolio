@@ -5,7 +5,6 @@ import TopBar from "./TopBar";
 import Hero from "./Hero";
 import StatStrip from "./StatStrip";
 import About from "./About";
-import Terminal from "./Terminal";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -68,7 +67,6 @@ export default function Portfolio() {
       <StatStrip />
       <About />
       <Experience />
-      <Terminal theme={theme} onToggleTheme={toggleTheme} />
       <Skills />
       <Achievements />
       <Contact themeLabel={themeLabel} />
