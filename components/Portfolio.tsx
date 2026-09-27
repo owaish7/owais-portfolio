@@ -64,11 +64,11 @@ export default function Portfolio() {
         onOpenPalette={openPalette}
       />
       <Hero />
+      <Projects />
       <StatStrip />
       <About />
-      <Terminal theme={theme} onToggleTheme={toggleTheme} />
       <Experience />
-      <Projects />
+      <Terminal theme={theme} onToggleTheme={toggleTheme} />
       <Skills />
       <Achievements />
       <Contact themeLabel={themeLabel} />
@@ -76,3 +76,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
