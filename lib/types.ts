@@ -18,6 +18,7 @@ export interface Achievement {
   big: string;
   title: string;
   sub: string;
+  writeup?: string;
   url: string;
 }
 
