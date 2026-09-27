@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react";
 import TopBar from "./TopBar";
 import Hero from "./Hero";
 import StatStrip from "./StatStrip";
-import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -65,7 +64,6 @@ export default function Portfolio() {
       <Hero />
       <Projects />
       <StatStrip />
-      <About />
       <Experience />
       <Skills />
       <Achievements />
