@@ -104,14 +104,14 @@ export default function Terminal({
       case "whoami":
         extra = [
           out([
-            "Mohammad Owais — Software Engineer @ Talendy (Tech Japan). B.Tech CS, IIIT Jabalpur (CPI 8.1). Backend & search systems, lately building with LLMs.",
+            "Mohammad Owais — Software Engineer @ Talendy (Tech Japan). B.Tech CS, IIIT Jabalpur (CPI 8.1). AI tools, workflow automation and applied security.",
           ]),
         ];
         break;
       case "about":
         extra = [
           out([
-            "I build large-scale search systems, and lately RAG and LLM features. ",
+            "I build RAG systems, automated workflows and practical AI tools. ",
             { a: "#about", t: "→ read more" },
           ]),
         ];
@@ -129,7 +129,7 @@ export default function Terminal({
       case "ls":
         extra = [
           out([
-            "food-link/   fast-er-ambulance/   ",
+            "ai-workflow-builder/   devrag/   phishing-detection/   ",
             { a: "#projects", t: "→ open" },
           ]),
         ];
@@ -173,7 +173,9 @@ export default function Terminal({
         ];
         break;
       case "github":
-        extra = [out(["github.com/owaish7 — opening ↗"])];
+        extra = [
+          out(["github.com/owaish7 — opening ↗"]),
+        ];
         setTimeout(() => window.open(LINKS.github, "_blank"), 200);
         break;
       case "theme":
@@ -298,3 +300,4 @@ export default function Terminal({
     </section>
   );
 }
+
