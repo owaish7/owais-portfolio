@@ -18,10 +18,10 @@ export const LINKS = {
 } as const;
 
 export const STATS = [
-  { big: "256K", label: "JOBS INDEXED" },
-  { big: "47", label: "JP PREFECTURES" },
   { big: "#102", label: "ICPC ASIA WEST" },
-  { big: "1000+", label: "DSA SOLVED" },
+  { big: "R2", label: "META HACKER CUP" },
+  { big: "1503", label: "CODEFORCES SPECIALIST" },
+  { big: "1000+", label: "PROBLEMS SOLVED" },
 ] as const;
 
 export const projects: Project[] = [
