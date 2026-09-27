@@ -3,6 +3,7 @@ export interface Project {
   cat: string;
   url: string;
   demo?: string;
+  proof?: string;
   desc: string;
   tags: string[];
 }
@@ -48,3 +49,4 @@ export type TermSeg = string | { a?: string; t: string; ext?: boolean; acc?: boo
 
 /** A single line in the terminal log: either an echoed command or an output. */
 export type TermLine = { echo: true; cmd: string } | { segs: TermSeg[] };
+
