@@ -26,71 +26,95 @@ export const STATS = [
 
 export const projects: Project[] = [
   {
-    name: "devrag",
-    cat: "gen-ai / RAG",
-    url: "https://github.com/owaish7/devrag",
-    desc: "A RAG pipeline over PDFs built from scratch — no LangChain, no vector database. Token-aware chunking, sentence-transformer embeddings and cosine search, with page-level citations and a relevance gate that refuses off-topic questions before spending an API call. Includes an eval harness (hit@k, MRR) that runs without an API key.",
-    tags: ["Python", "PyTorch", "sentence-transformers", "FastAPI", "Docker", "Gemini"],
+    "name": "AI Workflow Builder",
+    "cat": "automation",
+    "url": "https://github.com/owaish7/ai-workflow-builder",
+    "demo": "https://ai-workflow-builder-two.vercel.app",
+    "desc": "A visual workflow system for chaining LLM calls, HTTP requests, database writes and human approvals. Webhooks and scheduled triggers start runs; permission checks, retries and live status make the execution inspectable.",
+    "tags": [
+      "Next.js",
+      "Llama / Groq",
+      "GraphQL",
+      "Postgres"
+    ],
+    "proof": "6 step types · 4 trigger types · approval gates"
   },
   {
-    name: "JobLens",
-    cat: "gen-ai / RAG",
-    url: "https://github.com/owaish7/joblens",
-    demo: "https://joblens-a6sg.onrender.com",
-    desc: "Semantic job search + RAG assistant over live listings. Gemini embeddings and a FAISS vector store for retrieval, a LangGraph workflow orchestrating retrieval → prompt → generation, and cited answers served over a FastAPI API. Deployed with Docker.",
-    tags: ["Python", "FastAPI", "LangChain", "LangGraph", "FAISS", "Gemini"],
+    "name": "DevRAG",
+    "cat": "retrieval + AI",
+    "url": "https://github.com/owaish7/devrag",
+    "desc": "Ask a PDF a question and get an answer with page citations. Built the retrieval pipeline directly with local open-source embeddings, token-aware chunking and relevance checks that let the system abstain when evidence is missing.",
+    "tags": [
+      "Python",
+      "Sentence Transformers",
+      "Gemini",
+      "FastAPI"
+    ],
+    "proof": "Page citations · retrieval evaluation · Docker"
   },
   {
-    name: "Food-Link",
-    cat: "full-stack",
-    url: "https://github.com/owaish7/food-link-app",
-    demo: "https://food-link-app-gold.vercel.app/",
-    desc: "Two-sided platform connecting restaurants' surplus food with nearby NGOs. Real-time orders & chat over Socket.IO, an SVD recommender built from scratch in NumPy plus content-based filtering, and hardened JWT-in-httpOnly-cookie auth closing a Broken-Access-Control gap.",
-    tags: ["React", "Tailwind", "Flask", "MongoDB", "Socket.IO", "NumPy"],
+    "name": "AI Phishing Detection",
+    "cat": "fine-tuning + security",
+    "url": "https://github.com/owaish7/Phishing-scanner-extension",
+    "desc": "Fine-tuned DistilBERT for SMS phishing, augmented minority-class data and benchmarked URL classifiers. Built the Chrome extension to scan page links. A team project: backend deployment and the mobile app were handled by collaborators.",
+    "tags": [
+      "DistilBERT",
+      "Python",
+      "Random Forest",
+      "Chrome MV3"
+    ],
+    "proof": "Model training notebooks + browser extension"
   },
   {
-    name: "FAST-ER Ambulance",
-    cat: "realtime + AI",
-    url: "https://github.com/owaish7/Faster-ambulance/tree/main",
-    desc: "Real-time ambulance management with a GenAI-powered triage chatbot and sentiment analysis for case classification. Dynamic allocation for faster response, and WebSocket notifications pushing live ETA & ambulance details to patients and hospitals.",
-    tags: ["Flask", "ReactJS", "MongoDB", "Leaflet", "WebSockets", "Gen-AI"],
+    "name": "AI Support Agent",
+    "cat": "agents + evaluation",
+    "url": "https://github.com/owaish7/hiver-support-agent",
+    "desc": "An experimental support agent using a public Twitter conversation dataset: classify intent, retrieve similar cases, draft a grounded reply and flag escalation. Includes hand-labelled evaluation and published failure analysis; not a live social-media integration.",
+    "tags": [
+      "gpt-oss",
+      "MiniLM",
+      "Python",
+      "RAG"
+    ],
+    "proof": "90-item test set · 24 offline tests · documented limits"
   },
   {
-    name: "Mockify",
-    cat: "gen-ai",
-    url: "https://github.com/owaish7/Mockify-AI-interview",
-    desc: "AI-powered mock-interview platform that generates role-specific questions, runs the session, and gives structured feedback on your answers.",
-    tags: ["Next.js", "TypeScript", "Gen-AI"],
+    "name": "JobLens",
+    "demo": "https://joblens-a6sg.onrender.com",
+    "cat": "semantic search",
+    "url": "https://github.com/owaish7/joblens",
+    "desc": "Search job listings by meaning, then ask follow-up questions grounded in the results. Combines public job APIs, FAISS retrieval and a LangGraph answer flow with citations, plus keyword fallback when an AI key is unavailable.",
+    "tags": [
+      "FastAPI",
+      "FAISS",
+      "LangGraph",
+      "Gemini"
+    ],
+    "proof": "API ingestion → semantic retrieval → cited answers"
   },
   {
-    name: "Hikari",
-    cat: "conversational ai",
-    url: "https://github.com/owaish7/Hikari--weather-chat-assistant",
-    desc: "Conversational weather assistant — ask about conditions in plain language and get chat-style forecasts backed by a live weather API.",
-    tags: ["TypeScript", "LLM", "Weather API"],
-  },
-  {
-    name: "AI Phishing Detection",
-    cat: "ml / nlp",
-    url: "https://github.com/owaish7/Phishing-scanner-extension",
-    desc: "Fine-tuned DistilBERT to detect SMS smishing at 99.4% accuracy, fixing a 6:1 class imbalance with back-translation. For URLs, benchmarked Logistic Regression vs Random Forest (82.5%) on 549K samples — choosing the Random Forest over a 99% DistilBERT that failed to generalise. Ships with a Chrome MV3 extension that scans page links against the deployed model.",
-    tags: ["DistilBERT", "PyTorch", "scikit-learn", "Chrome MV3", "Flask"],
-  },
-  {
-    name: "Drowning Detection",
-    cat: "computer vision",
-    url: "https://github.com/owaish7/Drowning-Detection",
-    desc: "Computer-vision pipeline that detects drowning events from pool footage to trigger early rescue alerts.",
-    tags: ["Python", "OpenCV", "ML"],
-  },
+    "name": "Food-Link",
+    "cat": "full-stack product",
+    "url": "https://github.com/owaish7/food-link-app",
+    "demo": "https://food-link-app-gold.vercel.app/",
+    "desc": "A platform connecting surplus food from restaurants with NGOs. Combines real-time orders and chat, a NumPy recommendation system and cookie-based authentication in a complete web application.",
+    "tags": [
+      "React",
+      "Flask",
+      "MongoDB",
+      "Socket.IO"
+    ],
+    "proof": "Real-time collaboration · recommendations · web app"
+  }
 ];
 
 export const skillGroups: SkillGroup[] = [
+  { name: "AI + models", items: ["RAG", "Sentence Transformers", "DistilBERT fine-tuning", "FAISS", "LangGraph", "LLM evaluation", "Bedrock", "Azure OpenAI"] },
+  { name: "automation", items: ["Webhooks", "Scheduled workflows", "REST APIs", "GraphQL", "Human approval gates"] },
   { name: "languages", items: ["Python", "C++", "C", "Java", "JavaScript", "TypeScript", "SQL"] },
-  { name: "ai / llm", items: ["RAG", "LangChain", "LangGraph", "FAISS", "sentence-transformers", "PyTorch", "DistilBERT", "Gemini", "Bedrock", "Azure OpenAI"] },
   { name: "frameworks", items: ["ReactJS", "NextJS", "NodeJS", "Express", "Flask", "FastAPI", "Tailwind"] },
   { name: "databases", items: ["MongoDB", "MySQL", "PostgreSQL"] },
-  { name: "tools", items: ["AWS", "Azure", "GCP", "Docker", "Terraform", "Git", "GitHub Actions"] },
+  { name: "tools", items: ["AWS", "Azure", "GCP", "Docker", "Git", "Terraform", "GitHub Actions"] },
 ];
 
 export const achievements: Achievement[] = [
@@ -102,7 +126,7 @@ export const achievements: Achievement[] = [
 export const paletteItems: PaletteItem[] = [
   { icon: "#", label: "About", href: "#about", hint: "bio" },
   { icon: ">", label: "Experience", href: "#experience", hint: "talendy · akatsuki" },
-  { icon: "/", label: "Projects", href: "#projects", hint: "devrag · joblens" },
+  { icon: "/", label: "Projects", href: "#projects", hint: "workflows · rag · security" },
   { icon: "≡", label: "Skills", href: "#skills", hint: "stack" },
   { icon: "★", label: "Achievements", href: "#achievements", hint: "icpc · codeforces" },
   { icon: "✉", label: "Contact", href: "#contact", hint: "email · linkedin" },
@@ -110,4 +134,5 @@ export const paletteItems: PaletteItem[] = [
   { icon: "↗", label: "Open GitHub ↗", href: LINKS.github, hint: "external" },
   { icon: "↗", label: "Open LinkedIn ↗", href: LINKS.linkedin, hint: "external" },
 ];
+
 
