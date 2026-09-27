@@ -7,11 +7,11 @@ import type {
 
 export const LINKS = {
   github: "https://github.com/owaish7",
-  linkedin: "https://www.linkedin.com/in/mohammad-owais-196ba3166/",
+  linkedin: "https://www.linkedin.com/in/md-owais-196ba3166/",
   email: "mohdowais752003@gmail.com",
   phone: "+91 8287548058",
   resume:
-    "https://drive.google.com/file/d/1lBT38vLuzT7KD7o-pWsG3cZXgCG8Y2E-/view?usp=sharing",
+    "https://drive.google.com/file/d/1JnHe_6xs-QsUUMj04tBLE09T-g8QYjSG/view?usp=sharing",
   codeforces: "https://codeforces.com/profile/owais78",
   leetcode: "https://leetcode.com/owais75/",
   codechef: "https://www.codechef.com/users/jack08",
@@ -118,9 +118,9 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const achievements: Achievement[] = [
-  { tag: "ICPC 2025", big: "#102", title: "Asia West Amritapuri", sub: "AIR 102 & Institute Topper — Team Greedy, India Online Prelims", url: LINKS.codeforces },
-  { tag: "META", big: "R2", title: "Meta Hacker Cup 2025", sub: "Advanced to Round 2", url: LINKS.codeforces },
-  { tag: "CP", big: "1000+", title: "Competitive Programming", sub: "Codeforces Specialist (1503) · LeetCode 700+ (Top 6%) · CodeChef 3★", url: LINKS.codeforces },
+  { tag: "ICPC 2025", big: "#102", title: "Asia West Amritapuri", sub: "AIR 102 & Institute Topper", writeup: "Placed 102nd in the ICPC India Online Prelims with Team Greedy, earning institute topper recognition.", url: "https://drive.google.com/file/d/1DOsFxQL_0QiKNsoRKdBISe4Iy9LxpELg/view?usp=sharing" },
+  { tag: "META", big: "R2", title: "Meta Hacker Cup 2025", sub: "Advanced to Round 2", writeup: "Reached Round 2 of Meta Hacker Cup, competing among more than 15,000 participants.", url: "https://drive.google.com/file/d/1Jqa5_jw1AU6n2AQUshUm9MQzI8QubX61/view?usp=sharing" },
+  { tag: "CP", big: "1000+", title: "Competitive Programming", sub: "Codeforces Specialist · LeetCode Knight · CodeChef 3★", writeup: "Solved 1000+ problems across platforms, with Codeforces 1503, LeetCode Top 6%, and CodeChef max rating 1656.", url: LINKS.codeforces },
 ];
 
 export const paletteItems: PaletteItem[] = [
